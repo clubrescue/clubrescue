@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="125px" viewBox="0 0 440 125" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    .logo    { font: Bold 53.333333px Helvetica ; fill: #FF5800; }
+    .caption { font: Bold 21.333333px Helvetica ; fill: #0065BD; }
+  </style>
+
+  <g id="image_text_group">
+    <text x="8.0338631" y="48.828125" class="logo">CLUB.REDDERS</text>
+    <text x="10.033863" y="85.828125" class="caption">Naam module of (omni)vereniging</text>
+    <text x="10.033863" y="109.82812" class="caption">Naam sportafdeling (bij omnivereniging)</text>
+  </g>
+</svg>

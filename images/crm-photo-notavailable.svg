@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  width="148px" height="148px" viewBox="0 0 148 148" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .error { font: 21.333333px Helvetica ; fill: #D9D9D9 ; text-anchor:middle ; }
+  </style>
+
+  <text x="74" y="040" class="error">Geen</text>
+  <text x="74" y="080" class="error">Pasfoto</text>
+  <text x="74" y="120" class="error">Beschikbaar</text>
+  
+  <rect x="10" y="10" width="128" height="128" style="stroke:#D9D9D9;stroke-width:5;fill-opacity:0.0;" />
+</svg>

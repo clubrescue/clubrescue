@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    .logo    { font: Bold 53.333333px Helvetica ; fill: #FF5800; }
+    .caption { font: Bold 21.333333px Helvetica ; fill: #0065BD; }
+  </style>
+
+  <g id="image_text_group" transform="translate(-0.07812967,25.260417)">
+    <text x="8.0338631" y="48.828125" class="logo">C.R</text>
+  </g>
+</svg>
