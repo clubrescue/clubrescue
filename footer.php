@@ -12,26 +12,26 @@
         <div class="col l3 s12">
           <h5 class="white-text">Meer info</h5>
           <ul>
-            <li><a class="white-text" href="support.php">Over ons</a></li>
-            <li><a class="white-text" href="support.php">Project</a></li>
-            <li><a class="white-text" href="support.php">Roadmap</a></li>
-            <li><a class="white-text" href="support.php">Documentatie</a></li>
+            <li><a class="white-text" target="_blank" href="https://clubrescue.github.io/about.html">Over ons</a></li>
+            <li><a class="white-text" target="_blank" href="https://github.com/clubrescue">Project</a></li>
+            <li><a class="white-text" target="_blank" href="https://github.com/clubrescue/clubrescue/projects/1">Roadmap</a></li>
+            <li><a class="white-text" target="_blank" href="http://clubrescue.github.io/clubrescue">Documentatie</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Onze tools</h5>
           <ul>
-            <li><a class="white-text" href="http://www.sphinx-doc.org">Sphinx</a></li>
-            <li><a class="white-text" href="https://www.draw.io">Draw.io</a></li>
-            <li><a class="white-text" href="https://www.machform.com">MachForm</a></li>
-            <li><a class="white-text" href="https://products.office.com/nl-nl/office-online/documents-spreadsheets-presentations-office-online">Office 365</a></li>
+            <li><a class="white-text" target="_blank" href="https://clubrescue.github.io">ITSuite4NP</a></li>
+            <li><a class="white-text" target="_blank" href="https://products.office.com/nl-nl/office-online/documents-spreadsheets-presentations-office-online">Office 365</a></li>
+            <li><a class="white-text" target="_blank" href="https://www.machform.com">MachForm</a></li>
+            <li><a class="white-text" target="_blank" href="https://wordpress.org">WordPress</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      © 2017 <a class="orange-text text-lighten-3" href="https://github.com/BorghoutsR/ClubRedders">Club.Redders - v0.8.6</a>, GNU GPL v2.
+      © 2017 <a class="orange-text text-lighten-3" target="_blank" href="https://github.com/BorghoutsR">Club.Redders - v0.8.6</a>, MIT/GPLv3.
       </div>
     </div>
   </footer>
