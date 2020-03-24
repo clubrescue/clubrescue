@@ -5,6 +5,14 @@
 
 ### Current Version : v0.8.6
 
+You need to place the following file/directories outside the public served folder:
+env.ini
+crbin/backup
+crbin/excel
+crbin/import
+crbin/pasfotos
+crbin/pasfotos/delete
+
 ## Supported Browsers:
 Chrome 80+, Edge 80+, Firefox 74+, Safari 13+
 
