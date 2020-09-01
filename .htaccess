@@ -1,0 +1,79 @@
+#Security requirements
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+SetEnv no-gzip dont-vary
+
+##Securing browsing for non existing files and folders
+
+#No index features
+Options All -Indexes
+IndexIgnore *
+
+#Force the index.php page as default
+DirectoryIndex index.php
+FallbackResource index.php
+
+#Setting the error documents
+ErrorDocument 401 /clubredders/
+ErrorDocument 403 /clubredders/
+ErrorDocument 404 /clubredders/
+
+#Enforce the error documents for existing files and folders
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^index.php [L]
+
+##C.R specific security settings
+
+#Explicit deny
+order allow,deny
+
+#Allow access to C.R root folder
+<files ./>
+order allow,deny
+allow from all
+</files>
+
+#Allow C.R core
+<files ~ "\.(php|html|css|js|ttf|eot|woff|woff2|ico|svg)$">
+order allow,deny
+allow from all
+</files>
+
+#Allow C.R excel tool module
+<files *.xlsb>
+order allow,deny
+allow from all
+</files>
+
+<files *.xlsm>
+order allow,deny
+allow from all
+</files>
+
+#Prevent html/php caching
+<FilesMatch "\.(php|html|css|js)$">
+Header Set Cache-Control "max-age=0, no-store"
+</FilesMatch>
+
+#Allow C.R pasfoto module --> this section is depreciated with the introduction of the crbin option
+#<FilesMatch "\.jpg$">
+#AuthName "breaksecure"
+#AuthUserFile ".htpasswd"
+#AuthType Basic
+#satisfy any
+#require valid-user
+#deny from all
+#</FilesMatch>
+
+#Allow additional file types for this setup
+<files ~ "\.(docx)$">
+order allow,deny
+allow from all
+</files>
+
+#Deny security related files
+<files (env.ini|wp-authenticate.php|README.md|LICENSE)$>
+order allow,deny
+deny from all
+</files>

@@ -1,0 +1,1 @@
+<h1><?php echo 'Hier zal binnenkort diploma beheer komen te staan.'; ?></h1>

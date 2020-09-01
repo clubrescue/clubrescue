@@ -1,6 +1,0 @@
-<?php
-	// Include database class	require_once 'util/utility.class.php';	require_once 'util/database.class.php';
-	if(!isset($user)){		header("Expires: Wed, 9 Apr 1986 21:00:00 GMT");		require_once("wp-authenticate.php");		/*** REQUIRE USER AUTHENTICATION ***/		login();		/*** RETRIEVE LOGGED IN USER INFORMATION ***/		$user = wp_get_current_user();	}
-	if(getUserName()){		$bondsFunctiesTableQuery =  'SELECT * FROM `cr_bondsfuncties` where `Relatienr` = \''.getUserName().'\' order by `Functie`';				$database = new Database();		$database->query($bondsFunctiesTableQuery);		$bondsFunctiesTableResult = $database->resultset();
-		$bondsFunctiesTable = '<table class="mat-resp-striped-table">';		$bondsFunctiesTable .= '<tr>';		$bondsFunctiesTable .= '<th>Bondsfunctie</th>';		$bondsFunctiesTable .= '</tr>';
-		if(count($bondsFunctiesTableResult) === 0){			$bondsFunctiesTable .= '<tr>';			$bondsFunctiesTable .= '<td>Je hebt (nog) geen bondsfuncties. </td>';			$bondsFunctiesTable .= '</tr>';		}else{			foreach ($bondsFunctiesTableResult as $key => $value) {				$bondsFunctiesTable .= '<tr>';				$bondsFunctiesTable .= '<td>'.$value["Functie"] . '</td>';				$bondsFunctiesTable .= '</tr>';			}		}		$bondsFunctiesTable .= "</table>";	}?>
