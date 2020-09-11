@@ -13,6 +13,6 @@
 
 	<!---// BEGIN stuff here for all contributors, authors, editors or admins--->
 	<?php if (current_user_can('contributor') ||  current_user_can('author') ||  current_user_can('editor') || current_user_can('administrator')) {  ?>
-	<li><a href="<?php echo $url; ?>/clubredders/modules/diplomamanagement/card/card.php"><i class="material-icons">assignment_ind</i>Competenties</a></li>
+	<li><a href="<?php echo $url; ?>/clubredders/modules/diplomamanagement/card/card.php" target="_blank"><i class="material-icons">assignment_ind</i>Competenties</a></li>
 	<?php } ?>
 	<!---// END stuff here for all contributors, authors, editors or admins--->

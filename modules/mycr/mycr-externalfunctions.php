@@ -22,8 +22,27 @@
 
 	if(isset($user)){
 		// LET OP! De gebruikersnaam in de SQL strings waren functies .getUser() en is nu een variabele. Dat moet nog aangepast worden.
-		$bondsFunctiesTableQuery =  'SELECT * FROM `cr_bondsfuncties` where `Relatienr` = \''.$userName.'\' order by `Functie`';				$database = new Database();		$database->query($bondsFunctiesTableQuery);		$bondsFunctiesTableResult = $database->resultset();
-		$bondsFunctiesTable = '<table class="mat-resp-striped-table">';		$bondsFunctiesTable .= '<tr>';		$bondsFunctiesTable .= '<th>Bondsfunctie</th>';		$bondsFunctiesTable .= '</tr>';
-		if(count($bondsFunctiesTableResult) === 0){			$bondsFunctiesTable .= '<tr>';			$bondsFunctiesTable .= '<td>Je hebt (nog) geen bondsfuncties. </td>';			$bondsFunctiesTable .= '</tr>';		}else{			foreach ($bondsFunctiesTableResult as $key => $value) {				$bondsFunctiesTable .= '<tr>';				$bondsFunctiesTable .= '<td>'.$value["Functie"] . '</td>';				$bondsFunctiesTable .= '</tr>';			}		}		$bondsFunctiesTable .= "</table>";	
+		$bondsFunctiesTableQuery =  'SELECT * FROM `cr_bondsfuncties` where `Relatienr` = \''.$userName.'\' order by `Functie`';
+		$database = new Database();
+		$database->query($bondsFunctiesTableQuery);
+		$bondsFunctiesTableResult = $database->resultset();
+		
+		$bondsFunctiesTable = '<p>Onderstaande gegevens worden beheerd door Reddingsbrigade Nederland.</p>';
+		$bondsFunctiesTable .= '<table class="mat-resp-striped-table">';
+		$bondsFunctiesTable .= '<tr>';
+		$bondsFunctiesTable .= '<th>Bondsfunctie</th>';
+		$bondsFunctiesTable .= '</tr>';
+		if(count($bondsFunctiesTableResult) === 0){
+			$bondsFunctiesTable .= '<tr>';
+			$bondsFunctiesTable .= '<td>Je hebt (nog) geen bondsfuncties.</td>';
+			$bondsFunctiesTable .= '</tr>';
+		}else{
+			foreach ($bondsFunctiesTableResult as $key => $value) {
+					$bondsFunctiesTable .= '<tr>';
+					$bondsFunctiesTable .= '<td>'.$value["Functie"] . '</td>';
+					$bondsFunctiesTable .= '</tr>';
+			}
+		}
+		$bondsFunctiesTable .= "</table>";	
 	}
 ?>

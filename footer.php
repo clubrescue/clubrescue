@@ -13,20 +13,20 @@
         <div class="col l3 s12">
           <h5 class="white-text">Meer info</h5>
           <ul>
-            <li><a class="white-text" target="_blank" href="https://clubrescue.github.io/about.html">Over ons</a></li>
+            <li><a class="white-text" target="_blank" href="https://clubrescue.github.io/aboutus">Over ons</a></li>
             <li><a class="white-text" target="_blank" href="https://github.com/clubrescue">Project</a></li>
             <li><a class="white-text" target="_blank"
                 href="https://github.com/clubrescue/clubrescue/projects/1">Roadmap</a></li>
-            <li><a class="white-text" target="_blank" href="http://clubrescue.github.io/clubrescue">Documentatie</a>
+            <li><a class="white-text" target="_blank" href="https://clubrescue.github.io/crdocs">Documentatie</a>
             </li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Onze tools</h5>
           <ul>
-            <li><a class="white-text" target="_blank" href="https://clubrescue.github.io">ITSuite4NP</a></li>
+            <li><a class="white-text" target="_blank" href="https://clubrescue.github.io/itsuitefornonprofits">ITSuite4NP</a></li>
             <li><a class="white-text" target="_blank"
-                href="https://products.office.com/nl-nl/office-online/documents-spreadsheets-presentations-office-online">Office
+                href="https://www.microsoft.com/microsoft-365/nonprofit/office-365-nonprofit">Office
                 365</a></li>
             <li><a class="white-text" target="_blank" href="https://www.machform.com">MachForm</a></li>
             <li><a class="white-text" target="_blank" href="https://wordpress.org">WordPress</a></li>

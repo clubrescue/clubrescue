@@ -33,8 +33,9 @@
 		foreach ($lidTableResult as $key => $value) {
 			$profielFotoSrc = getProfilePictureSource($value["Relatienr"]);
 			
-			$lidTable = '<div class="container"><div class="row"><div class="col s3 push-s7">';
-			$lidTable .='<img src="'.$profielFotoSrc.'" style="float:left;	position:absolute;right:0;top:0;max-height:230px;"/></div>';
+			$lidTable = '<p>Ontbreken of kloppen je gegevens niet? Wijzig je gegevens via het tabblad mijn acties.</p>';
+			$lidTable .= '<div class="container"><div class="row"><div class="col s3 push-s7">';
+			$lidTable .= '<img src="'.$profielFotoSrc.'" style="float:left;	position:absolute;right:0;top:0;max-height:230px;"/></div>';
 			$lidTable .= '<div class="col s9 pull-s5" style="padding-right:185px">';
 			$lidTable .= '<table class="striped">'; 
 
@@ -153,6 +154,7 @@
 
 			$lidTable .= '</table>';
 			$lidTable .= '</div></div></div>';
+			$lidTable .= '<p>Voor het innen van de contributie maakt de TRB gebruik van de standaard Europese incasso.<br>Het incassant ID van de TRB is NL08ZZZ406365290000.<br><br>Legitimatie(type) afkortingen;<br>RB    Rijbewijs<br>PN    Paspoort<br>NI     Identiteitskaart</p>';
 		}
 	}
 ?>

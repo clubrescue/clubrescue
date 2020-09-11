@@ -28,7 +28,8 @@
 		$database->query($bondsDiplomasTableQuery);
 		$bondsDiplomasTableResult = $database->resultset();
 		
-		$bondsDiplomasTable = '<table class="mat-resp-striped-table">';
+		$bondsDiplomasTable = '<p>Toevoegen/wijzigen bondsdiploma’s, en vaardigheid bewijzen van derde? Registreer ze via het tabblad mijn acties.<br>Gegevens die niet gewijzigd kunnen worden via het tabblad mijn acties worden beheerd door Reddingsbrigade Nederland.</p>';
+		$bondsDiplomasTable .= '<table class="mat-resp-striped-table">';
 		$bondsDiplomasTable .= '<tr>';
 		$bondsDiplomasTable .= '<th>Naam Diploma</th>';
 		$bondsDiplomasTable .= '<th>Ingangsdatum</th>';

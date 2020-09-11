@@ -27,7 +27,8 @@
 		$database = new Database();
 		$database->query($verenigingsDiplomasTableQuery);
 		$verenigingsDiplomasTableResult = $database->resultset();
-		$verenigingsDiplomasTable  = '<table class="mat-resp-striped-table">'; 
+		$verenigingsDiplomasTable  = '<p>Verlenging verklaring Eerste Hulp (EHBO diploma/Levensreddende Handelingen) doorgeven? Geef je verlenging door via het tabblad mijn acties.<br>Heb je nog geen Levensreddende Handelingen? Geef je Verklaring Eerste Hulp dan eerst door via het tabblad bondsdiploma’s.</p>'; 
+		$verenigingsDiplomasTable .= '<table class="mat-resp-striped-table">'; 
 		$verenigingsDiplomasTable .= '<tr>';        
 		$verenigingsDiplomasTable .= '<th>Naam Diploma</th>';
 		$verenigingsDiplomasTable .= '<th>Diploma Soort</th>'; 

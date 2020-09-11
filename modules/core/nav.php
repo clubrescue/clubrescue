@@ -17,7 +17,6 @@
 		<div class="collapsible-header"><i class="material-icons">admin_panel_settings</i>Beheer</div>
 		<div class="collapsible-body">
 			<ul>
-				<li><a href="<?php echo $url; ?>/clubredders/modules/core/support.php"><i class="material-icons">help</i>Documentatie</a></li>
 				<li><a href="<?php echo $url; ?>/clubredders/modules/core/crwp-settings.php"><i class="material-icons">design_services</i>C.R-WP settings</a></li>
 				<li><a href="<?php echo $url; ?>/clubredders/modules/core/wp-sso-settings.php"><i class="material-icons">login</i>WordPress SSO settings</a></li>
 				<li><a href="<?php echo $url; ?>/clubredders/modules/core/mf-autorisaties.php"><i class="material-icons">supervisor_account</i>MachForm autorisaties</a></li>

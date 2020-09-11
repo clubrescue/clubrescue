@@ -93,6 +93,7 @@
 					<?php include __DIR__ . '/modules/core/nav.php'; ?>
 					<!---// BEGIN stuff here for all roles--->
 					<?php if (current_user_can('subscriber') ||  current_user_can('contributor') ||  current_user_can('author') ||  current_user_can('editor') || current_user_can('administrator')) {  ?>
+					<li><a href="https://clubrescue.github.io/crdocs" target="_blank"><i class="material-icons">help</i>Documentatie</a></li>
 					<li><a href="<?php echo $url; ?>/wp-login.php?action=logout"><i class="material-icons">exit_to_app</i>Uitloggen</a></li>
 					<?php }else { ?> <!---// END stuff here for all roles and BEGIN stuff here if user has no role--->
 					<li><a href="https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&scope=openid&domain_hint=trb.nu&client_id=115e93b9-98f9-4732-82bf-0cf79c0ed437&resource=https%3A%2F%2Fgraph.microsoft.com&redirect_uri=https%3A%2F%2Ftrb.nu%2Fwp-login.php&state=%7B0C913F39-1152-4FED-C546-CBAD15117A8D%7D&nonce=%7B0C913F39-1152-4FED-C546-CBAD15117A8D%7D&sso_reload=true"><i class="material-icons">exit_to_app</i>Inloggen</a></li>

@@ -107,6 +107,7 @@
 	    </ul>
 	  </div>
 	  <div id="declaraties" class="col s12">
+		<?php echo $DeclaratiesHeader ?>
 		<ul class="collapsible" data-collapsible="accordion">
 	      <li>
 			<div class="collapsible-header"><i class="material-icons">local_mall</i>Inkopen</div>
@@ -121,6 +122,7 @@
 			<div class="collapsible-body"><span><?php echo $OvertochtenTable ?></span></div>
 		  </li>
 		</ul>
+		<?php echo $DeclaratiesFooter ?>
 	  </div>
 	</div>
 

@@ -39,7 +39,9 @@
 		$databaseOvertochten->query($sqlOvertochten);	
 		$resultOvertochten = $databaseOvertochten->resultset();
 
-		$InkopenTable = '<table class="mat-resp-striped-table">';
+		$DeclaratiesHeader = '<p>Op deze pagina tref je een overzicht aan van de door jouw ingediende declaraties.<br>Dit overzicht wordt maandelijks bijgewerkt en is nog in ontwikkeling. Het status veld wordt momenteel nog niet gebruikt.</p>';
+		
+		$InkopenTable .= '<table class="mat-resp-striped-table">';
 		$InkopenTable .= '<tr>';
 		$InkopenTable .= '<th>Administratie nr.</th>';
 		$InkopenTable .= '<th>Volg nr.</th>';
@@ -80,6 +82,8 @@
 		$OvertochtenTable .= '<th>Reisgegevens</th>';
 		$OvertochtenTable .= '<th>Status</th>';
 		$OvertochtenTable .= '</tr>';
+		
+		$DeclaratiesFooter = '<p>Betekenis status;<br>Wacht op OC/SE   Na het indienen van een declaratie wacht deze op goedkeuring door de OC (CSz/CieO) of Secretaris (bestuur/overig).<br>Wacht op PM        Na goedkeuring door de OC/Secretaris wacht de declaratie op betaling door de penningmeester.<br>Wacht op 2e          Na betaling door de penningmeester wacht de uitvoering hiervan op een 2e handtekening van een bestuurder.<br>Afgekeurd              De declaratie is afgekeurd door de OC/Secretaris of penningmeester.<br>Betaald                   De declaratie is uitbetaald.</p>';
 
 		if(count($resultInkopen) === 0){
 			$InkopenTable .= '<tr>';

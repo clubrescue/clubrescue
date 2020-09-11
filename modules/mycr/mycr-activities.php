@@ -31,7 +31,8 @@
 		$database = new Database();
 		$database->query($tableQuery);
 		$tableResult       = $database->resultset();
-		$activiteitenTable = '<table class="mat-resp-striped-table">';
+		$activiteitenTable = '<p>Kloppen deze gegevens niet? Neem dan contact op met commissie strandzaken.</p>';
+		$activiteitenTable .= '<table class="mat-resp-striped-table">';
 		$activiteitenTable .= '<tr>';
 		$activiteitenTable .= '<th>Activiteit</th>';
 		$activiteitenTable .= '<th>Vanaf Datum</th>';
@@ -64,5 +65,6 @@
 				}
 		}
 				$activiteitenTable .= "</table>";
+				$activiteitenTable .= '<p>Let op: het veld opmerkingen is bedoeld voor indeling wensen en opmerkingen t.b.v. later starten, eerder of tussen tijds terug moeten gaan van het eiland. Indien dit veld voor een week medische gegevens (dieet/noodcontacten etc.) bevat, gelieve contact op te nemen met commissie strandzaken om deze informatie te laten verwijderen.</p>';
 	}
 ?>
